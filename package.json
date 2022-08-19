@@ -1,0 +1,24 @@
+{
+  "name": "housepaging",
+  "version": "1.0.0",
+  "description": "a landing page for a fictional company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomonyaw/housepaging.git"
+  },
+  "author": "solomonyaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solomonyaw/housepaging/issues"
+  },
+  "homepage": "https://github.com/solomonyaw/housepaging#readme",
+  "devDependencies": {
+    "node": "^16.17.0",
+    "sass": "^1.54.4"
+  }
+}
