@@ -2,6 +2,7 @@
 {
     font-family: $font-display;
     font-weight: 400;
+    
 }
 
 .heading-1
@@ -12,11 +13,29 @@
 .heading-2
 {
     @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light
+    {
+       color: $color-green-dark-1;
+             
+    }
+
+    &--dark
+    {
+       color:    $color-green-dark-2;
+    }
 }
 
 .heading-3
 {
     @extend %heading;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-icon;
 }
 
 .heading-4
@@ -35,3 +54,31 @@
      color:$color-green-dark-2;
     }
 }
+
+.btn
+{
+background-color: $color-icon;
+border: none;
+border-radius: none;
+font-family: $font-display;
+font-size: 1.5rem;
+color: $color-grey-light-1;
+text-transform: uppercase;
+padding: 1.8rem 3rem;
+cursor: pointer;
+transition: all 0.7s;
+
+&:hover
+{
+    background-color: $color-green-dark-1;
+}
+
+
+}
+
+.margin-btm-sm{margin-bottom: 2rem;}
+.margin-btm-md{margin-bottom: 3rem;}
+.margin-btm-lg{margin-bottom: 4rem;}
+.margin-btm-hg{margin-bottom: 8rem;}
+
+

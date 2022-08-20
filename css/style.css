@@ -29,6 +29,24 @@ body {
   font-weight: 400;
 }
 
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+}
+.heading-2--light {
+  color: #1fc341;
+}
+.heading-2--dark {
+  color: #0b8524;
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fd7e14;
+}
+
 .heading-4 {
   font-size: 1.9rem;
 }
@@ -37,6 +55,38 @@ body {
 }
 .heading-4--dark {
   color: #0b8524;
+}
+
+.btn {
+  background-color: #fd7e14;
+  border: none;
+  border-radius: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #f9f7f6;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.btn:hover {
+  background-color: #1fc341;
+}
+
+.margin-btm-sm {
+  margin-bottom: 2rem;
+}
+
+.margin-btm-md {
+  margin-bottom: 3rem;
+}
+
+.margin-btm-lg {
+  margin-bottom: 4rem;
+}
+
+.margin-btm-hg {
+  margin-bottom: 8rem;
 }
 
 .sidebar {
@@ -88,8 +138,22 @@ body {
   grid-column: full-start/col-end 4;
 }
 .story__content {
+  /**display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start; **/
+  display: grid;
+  align-content: center;
+  justify-items: start;
   background-color: #f9f7f6;
   grid-column: col-end 4/full-end;
+  padding: 6rem 8vw;
+}
+
+.story__text {
+  color: rgb(46, 44, 44);
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 .homes {

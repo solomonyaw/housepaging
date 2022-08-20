@@ -1,5 +1,6 @@
     .story
     {
+       
         &__pictures
         {
         background-color: $color-primary;
@@ -8,7 +9,24 @@
 
         &__content
         {
+            /**display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: flex-start; **/
+
+            display: grid;
+           align-content: center;
+            justify-items: start;
+
         background-color: $color-grey-light-1;
         grid-column: col-end 4/ full-end;
+        padding: 6rem 8vw;
         }
+    }
+
+    .story__text
+    {
+        color: $color-grey-dark-1;
+        font-style: italic;
+        font-size: 1.5rem;
     }
