@@ -242,7 +242,7 @@ body {
 }
 
 .gallery {
-  background-color: #0b8524;
+  background-color: #1b3975;
   grid-column: full-start/full-end;
   grid-gap: 1rem;
   display: grid;
@@ -319,8 +319,42 @@ body {
 }
 
 .footer {
-  background-color: #22355b;
+  background-color: #fd7e14;
   grid-column: full-start/full-end;
+  padding: 3rem;
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+  display: block;
+  transition: all 0.8s;
+}
+.nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.192);
+  transform: translateX(-3px);
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
