@@ -2,12 +2,15 @@
 {
     font-family: $font-display;
     font-weight: 400;
+    color: $color-grey-light-1;
+    line-height: 1;
     
 }
 
 .heading-1
 {
     @extend %heading;
+    font-size: 4.5rem;
 }
 
 .heading-2
@@ -70,7 +73,7 @@ transition: all 0.7s;
 
 &:hover
 {
-    background-color: $color-green-dark-1;
+    background-color: $color-primary;
 }
 
 

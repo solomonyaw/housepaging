@@ -1,5 +1,38 @@
 .header
 {
-    background-color: $color-green-dark-1;
+    background-image: linear-gradient(rgba($color-green-dark-2,0.80),rgba($color-green-dark-1,0.80)), url("/img/gal-14.jpeg");
     grid-column:full-start / col-end 6;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    grid-template-columns: max-content;
+    grid-row-gap: 1.5rem;
+    padding: 8rem;
+    padding-top: 4rem;
+    justify-content: center;
+    
+
+    &__logo
+    {
+      height: 7rem;
+      justify-self: center;
+    }
+
+    &__payment-logos
+    {
+         img{
+           height:6rem;
+           width: 13rem;
+         }
+    }
+
+    &__btn
+    {
+        justify-self: start ;
+        align-self: center;
+    }
+
 }
+

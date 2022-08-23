@@ -27,6 +27,12 @@ body {
 .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+  color: #f9f7f6;
+  line-height: 1;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
 }
 
 .heading-2 {
@@ -70,7 +76,7 @@ body {
   transition: all 0.7s;
 }
 .btn:hover {
-  background-color: #1fc341;
+  background-color: #22355b;
 }
 
 .margin-btm-sm {
@@ -120,8 +126,30 @@ body {
 }
 
 .header {
-  background-color: #1fc341;
+  background-image: linear-gradient(rgba(11, 133, 36, 0.8), rgba(31, 195, 65, 0.8)), url("/img/gal-14.jpeg");
   grid-column: full-start/col-end 6;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+  padding: 8rem;
+  padding-top: 4rem;
+  justify-content: center;
+}
+.header__logo {
+  height: 7rem;
+  justify-self: center;
+}
+.header__payment-logos img {
+  height: 6rem;
+  width: 13rem;
+}
+.header__btn {
+  justify-self: start;
+  align-self: center;
 }
 
 .agents {
