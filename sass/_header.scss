@@ -6,8 +6,8 @@
     background-attachment: fixed;
     background-position: center;
     display: grid;
-    grid-template-rows: 1fr min-content 6rem 1fr;
-    grid-template-columns: max-content;
+    grid-template-rows: 1fr min-content min-max(6rem,min-content) 1fr;
+    grid-template-columns: minmax(min-content,max-content);
     grid-row-gap: 1.5rem;
     padding: 8rem;
     padding-top: 4rem;
@@ -26,12 +26,13 @@
       grid-template-columns: repeat(3,1fr); 
       grid-gap:3rem;
       justify-items: center;
+      align-items: center;
       filter: brightness(70%);
       
  
          img{
            height:6rem;
-           width: 13rem;
+           max-width: 100%;
          }
     }
 
