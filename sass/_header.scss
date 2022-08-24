@@ -1,6 +1,6 @@
 .header
 {
-    background-image: linear-gradient(rgba($color-green-dark-2,0.80),rgba($color-green-dark-1,0.80)), url("/img/gal-14.jpeg");
+    background-image: linear-gradient(rgba($color-primary-dark,0.80),rgba($color-primary-dark,0.50)), url("/img/gal-14.jpeg");
     grid-column:full-start / col-end 6;
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +21,14 @@
     }
 
     &__payment-logos
-    {
+    {  
+      display: grid;
+      grid-template-columns: repeat(3,1fr); 
+      grid-gap:3rem;
+      justify-items: center;
+      filter: brightness(70%);
+      
+ 
          img{
            height:6rem;
            width: 13rem;
@@ -32,6 +39,35 @@
     {
         justify-self: start ;
         align-self: center;
+    }
+    
+    &__payment
+    {
+      font-size: 1.5rem;
+      color: $color-grey-light-1;
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-gap: 3px;
+      justify-items: center;
+      align-items: center;
+
+      &::before
+      {
+        content: "";
+        display: block;
+        background-color: $color-grey-light-1;
+        width:95%;
+        height: 1%;
+      }
+
+      &::after
+      {
+        content: "";
+        display: block;
+        background-color: $color-grey-light-1;
+        width:95%;
+        height: 1%;
+      }
     }
 
 }

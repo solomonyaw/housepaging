@@ -126,7 +126,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(rgba(11, 133, 36, 0.8), rgba(31, 195, 65, 0.8)), url("/img/gal-14.jpeg");
+  background-image: linear-gradient(rgba(27, 57, 117, 0.8), rgba(27, 57, 117, 0.5)), url("/img/gal-14.jpeg");
   grid-column: full-start/col-end 6;
   background-size: cover;
   background-attachment: fixed;
@@ -143,6 +143,13 @@ body {
   height: 7rem;
   justify-self: center;
 }
+.header__payment-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  justify-items: center;
+  filter: brightness(70%);
+}
 .header__payment-logos img {
   height: 6rem;
   width: 13rem;
@@ -150,6 +157,29 @@ body {
 .header__btn {
   justify-self: start;
   align-self: center;
+}
+.header__payment {
+  font-size: 1.5rem;
+  color: #f9f7f6;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+}
+.header__payment::before {
+  content: "";
+  display: block;
+  background-color: #f9f7f6;
+  width: 95%;
+  height: 1%;
+}
+.header__payment::after {
+  content: "";
+  display: block;
+  background-color: #f9f7f6;
+  width: 95%;
+  height: 1%;
 }
 
 .agents {
