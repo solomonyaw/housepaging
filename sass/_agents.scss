@@ -1,5 +1,52 @@
 .agents
 {
-    background-color: $color-green-dark-2;
+    background-color:$color-primary-dark;
     grid-column:col-start 7 / full-end;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    justify-items: start;
+    align-items: start;
+    padding-bottom: 5rem;
+
+    &__heading
+    {
+        grid-column: 2/span 2;
+        margin-bottom: 0rem;
+        justify-self: end;
+        align-self: end;
+        padding-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    &__agent
+    {    
+        display: flex;
+        flex-direction:column;
+        margin-left: 5rem;
+        grid-column: 2/span 4;
+        
+
+    }
+    &__p1
+    {
+        color:$color-grey-light-1;
+        font-family: $font-display;
+        text-transform: capitalize;
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__p2
+    {
+       color: $color-grey-light-2;
+       padding-bottom: 1.5rem;
+    }
+
+    &__img
+    {
+     width:8rem;
+     height: 8rem;
+     border-radius: 50%;
+     
+    }
 }
