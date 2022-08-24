@@ -71,6 +71,7 @@ body {
 
 .heading-4 {
   font-size: 1.9rem;
+  color: #0b8524;
 }
 .heading-4--light {
   color: #1fc341;
@@ -178,6 +179,9 @@ body {
 @media only screen and (max-width: 50em) {
   .header {
     grid-column: 1/-1;
+    grid-row-gap: 0rem;
+    padding: 1rem;
+    grid-template-rows: min-content min-content min-max(3rem, min-content) min-content;
   }
 }
 .header__logo {
