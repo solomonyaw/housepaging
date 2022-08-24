@@ -180,8 +180,6 @@ body {
   .header {
     grid-column: 1/-1;
     grid-row-gap: 0rem;
-    padding: 1rem;
-    grid-template-rows: min-content min-content min-max(3rem, min-content) min-content;
   }
 }
 .header__logo {
